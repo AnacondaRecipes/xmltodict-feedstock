@@ -35,7 +35,7 @@ about:
   home: https://github.com/martinblech/xmltodict
   license: MIT
   license_family: MIT
-  license_url: https://github.com/martinblech/xmltodict/blob/v0.13.0/LICENSE
+  license_file: LICENSE
   description: |
     xmltodict is a Python module that makes
     working with XML feel like you are working with JSON.
