@@ -1,19 +1,19 @@
 {% set name = "xmltodict" %}
-{% set version = "0.14.2" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 201e7c28bb210e374999d1dde6382923ab0ed1a8a5faeece48ab525b7810a553
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 54306780b7c2175a3967cad1db92f218207e5bc1aba697d887807c0fb68b7649
 
 build:
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
   # https://github.com/martinblech/xmltodict/blob/v0.14.2/setup.py#L25
-  skip: True  # [py<36]
+  skip: true  # [py<36]
 
 requirements:
   host:
@@ -45,7 +45,7 @@ about:
     xmltodict is a Python module that makes
     working with XML feel like you are working with JSON.
   doc_url: https://github.com/martinblech/xmltodict/blob/master/README.md
-  summary: 'Makes working with XML feel like you are working with JSON'
+  summary: Makes working with XML feel like you are working with JSON
   dev_url: https://github.com/martinblech/xmltodict
 
 extra:
