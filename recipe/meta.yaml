@@ -29,7 +29,7 @@ test:
     - xmltodict
   commands:
     - pip check
-    - pytest -v tests
+    - pytest -vv tests
   requires:
     - pip
     - pytest
